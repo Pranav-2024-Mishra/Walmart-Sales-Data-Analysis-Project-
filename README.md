@@ -75,13 +75,34 @@ Objective: Solve critical business questions using SQL queries.
 
 **Key Analyses:**
 
-● Identify revenue trends by branch and product categories.
+● Which product category generates the highest revenue?
 
-● Determine the best-selling product categories.
+    '''
+      SELECT CATEGORY AS PRODUCT_CATEGORY , 
+      SUM(TOTAL) AS TOTAL_REVENUE
+      FROM WALMART
+      GROUP BY PRODUCT_CATEGORY
+      ORDER BY TOTAL_REVENUE
+      LIMIT 1;
+    '''
 
+● Peak Sales Times:  During which hours of the day do most transactions occur?
+
+      '''
+     SELECT 
+       CAST(SPLIT_PART(time, ':', 1) AS INTEGER) AS transaction_hour,
+	    COUNT(*) AS transaction_count
+     FROM 
+       walmart
+     GROUP BY 
+       transaction_hour
+     ORDER BY
+       transaction_count DESC 
+     LIMIT 1; 
+    '''
 ● Analyze sales performance across time, locations, and payment methods.
 
-● Identify peak sales hours and customer purchasing behaviors.
+● Analyze Payment Methods and Sales:  What are the different payment methods, and how many transactions and items were sold with each method?
 
 ● Conduct profit margin analysis by branch and category.
 
