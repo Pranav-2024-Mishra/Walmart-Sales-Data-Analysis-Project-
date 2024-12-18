@@ -187,4 +187,4 @@ Follow the outlined steps to clean, load, and analyze the data.
 ● Inspiration: Walmart’s business case studies on sales and supply chain optimization.
 
 
-## I have added a html file and one json file, running that on browser and adding that json file in choosen file option, you will get a Interactive Sales Dashboard of Walmart. 
+## Note:  I have added a html file and one json file, running that on browser and adding that json file in choosen file option, you will get a Interactive Sales Dashboard of Walmart. 
