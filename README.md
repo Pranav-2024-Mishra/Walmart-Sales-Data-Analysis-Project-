@@ -100,11 +100,12 @@ Objective: Solve critical business questions using SQL queries.
        transaction_count DESC 
      LIMIT 1; 
     '''
-● Analyze sales performance across time, locations, and payment methods.
+----
+      ● Analyze sales performance across time, locations, and payment methods.
 
-● Analyze Payment Methods and Sales:  What are the different payment methods, and how many transactions and items were sold with each method?
+      ● Analyze Payment Methods and Sales:  What are the different payment methods, and how many transactions and items were sold with each method?
 
-● Conduct profit margin analysis by branch and category.
+      ● Conduct profit margin analysis by branch and category.
 
 ● Documentation: Record each query with its goal, approach, and results for clarity.
 
